@@ -12,7 +12,8 @@ namespace LibreriaEmpleados.Models.Base
         public string Nombre { get; set; }
         public string Apellido { get; set; }
 
-        protected Persona(int id, string nombre, string apellido)
+        public Persona() { }
+        public Persona(int id, string nombre, string apellido)
         {
             Id = id;
             Nombre = nombre;
